@@ -21,5 +21,20 @@ Todos los cambios de conforme vaya avanzado el proyecto se iran registrando aqui
 - Se agregaron unas tablas para simular una libreria, donde existen usuarios, libros y prestamos de libros, aqui se relaciona con usuarios_id y libro_id, entonces se ocupo, por ejemplo FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id).
 - cuando se finalizo, se uso **conexion.commit()**
 - SE AGREGARON datos de ejemplo en el archivo. Para agregarlos a sqlite, despues de los datos simulados, se ejecuto **cursor.executemany(''' INSERT INTO name_tabla (llave1, llave2, llave 3) VALUES (?, ?, ?) ''')**
-- depsues se agrego de nuevo un **conexion.coomit()** y desppues un print para confirmar la base de datos-
+- depsues se agrego de nuevo un **conexion.commit()** y desppues un print para confirmar la base de datos-
+
+## [0.0.4] - 2026-07-07
+
+### modificacion
+
+- como se va agrgar consultas ya con la base de datos creada, se van a separar todos los archivos: se moveran a una carpeta llamada base y habran cuatro archivos por el momento: 
+**1. database.py:** solo contiene la conexion, no se ejecuta
+**2. creartablas.py:** se ejecuta al crear tablas nuevas
+**3. insertar_datos.py:**
+**4. consultar.py:** 
+
+
+
+
+
 
